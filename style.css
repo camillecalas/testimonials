@@ -9,6 +9,7 @@ body{
     font-size: 13px;
     font-weight: 100;
     line-height: 1.2rem;
+    letter-spacing: 0.05rem;
     color:white;
     background: hsl(0, 0%, 81%);
 }
@@ -102,8 +103,24 @@ article{
     grid-column-end: 4;
 }
 
-@media (min 375px){
-    .containerGrid {
-        grid-column: 1fr;
+
+@media (max-width: 750px) {
+    .containerGrid{
+        background: hsl(0, 0%, 81%);
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    
+    .card{
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .card3{
+    
+        grid-row: 5;
     }
 }
+   
